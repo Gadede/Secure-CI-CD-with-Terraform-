@@ -1,4 +1,4 @@
-name: Terraform CI/CD Pipeline
+name: Secure Terraform CI/CD Pipeline 
 
 on:
   
