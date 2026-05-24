@@ -1,9 +1,9 @@
 terraform {
   required_version = ">= 0.12"
   backend "s3" {
-    bucket       = "myapp-tfstate-dev-101"
+    bucket       = "gadede-terraform-ci-cd"
     key          = "dev/terraform.tfstate"
-    region       = "us-east-1"
+    region       = "us-east-2"
     encrypt      = true
     use_lockfile = true
   }
