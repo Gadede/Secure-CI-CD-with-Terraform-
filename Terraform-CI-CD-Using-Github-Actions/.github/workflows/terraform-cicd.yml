@@ -133,7 +133,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
           role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
-          role-session-name: GitHubActions
+          role-session-name: TerraformCICD-Role
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Run tfsec security scan
@@ -189,7 +189,7 @@ jobs:
       uses: trstringer/manual-approval@v1
       with:
         secret: ${{ github.TOKEN }}
-        approvers: kodcapsule
+        approvers: Gadede
         minimum-approvals: 1
         issue-title: "Deploying v1.1 to prod from staging"
         issue-body: |
