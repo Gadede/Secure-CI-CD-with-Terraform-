@@ -1,4 +1,4 @@
-name: Terraform CI/CD Pipeline IaC
+name: Terraform CI/CD Pipeline IaC Security Scanning and Manual Approval
 
 on:
   
